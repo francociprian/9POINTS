@@ -81,6 +81,11 @@ header {
     letter-spacing: 1.5px;
     font-weight: 400;
     font-size: 1.2em;
+    transition: .4s cubic-bezier(0.15, 0.10, 0.355, 1);
+}
+
+.menu .menuNav .menuNavLink:hover {
+    color: rgb(255, 81, 0);
 }
 
 /* LOGO MENU RESPONSIVE */
@@ -119,7 +124,7 @@ header {
     opacity: 0.9;
     max-width: 100%;
     height: auto;
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 /* NOSOTROS */
@@ -151,6 +156,12 @@ header {
     border: 2px solid rgb(255, 255, 255);
     margin: 1rem;
     width: 450px;
+    transition: all 0.3s;
+}
+
+.btnNosotros .btnNosotrosLink:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .btnNosotros .btnContactoLink {
@@ -159,6 +170,12 @@ header {
     border: 2px solid rgb(255, 81, 0);
     margin: 1rem;
     width: 450px;
+    transition: all 0.3s;
+}
+
+.btnNosotros .btnContactoLink:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 81, 0);
 }
 
 
@@ -194,6 +211,11 @@ footer .listaIconos {
 
 footer .listaIconos .iconosFooter {
     padding: 2rem;
+    transition: all 0.3s;
+}
+
+footer .listaIconos .iconosFooter:hover {
+    transform: scale(1.5);
 }
 
 /* COLORES ICONOS FOOTER */
@@ -261,6 +283,11 @@ footer .listaIconos .iconosFooter .fa-instagram {
 .serviciosCardImagen .serviciosImagen {
     width: 100%;
     display: block;
+    transition: all 0.5s ease;
+}
+
+.serviciosCard:hover .serviciosImagen {
+    transform: scale(1.2);
 }
 
 .serviciosCardImagen .serviciosCardTitulo {
@@ -281,7 +308,7 @@ footer .listaIconos .iconosFooter .fa-instagram {
 /* PROYECTOS */
 
 .proyecto {
-    margin-top: 4rem;
+    margin: 10rem 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -292,7 +319,6 @@ footer .listaIconos .iconosFooter .fa-instagram {
     width: 100%;
     margin: auto;
     padding: 0 4.5em;
-    margin-bottom: 165px;
 }
 
 .proyectoGaleria {
@@ -451,8 +477,12 @@ footer .listaIconos .iconosFooter .fa-instagram {
     text-align: center;
     border: 1px solid rgb(0, 0, 0);
     box-shadow: 5px 5px 12px -2px rgba(0, 0, 0, 0.48);
+    transition: all 0.5s;
 }
 
+.equipoCard:hover {
+    transform: scale(1.1);
+}
 
 .equipoCard .equipoCardNombre {
     font-size: 2em;
@@ -535,6 +565,13 @@ footer .listaIconos .iconosFooter .fa-instagram {
     border-radius: 5px;
     padding: 0.625rem 4.375rem;
     margin: 0 0.625rem;
+    transition: all 0.3s;
+}
+
+.btnFormulario .enviar:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 81, 0);
+    color: rgb(255, 255, 255);
 }
 
 .btnFormulario .borrar {
@@ -544,6 +581,13 @@ footer .listaIconos .iconosFooter .fa-instagram {
     border-radius: 5px;
     padding: 0.625rem 4.375rem;
     margin: 0 0.625rem;
+    transition: all 0.3s;
+}
+
+.btnFormulario .borrar:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 
