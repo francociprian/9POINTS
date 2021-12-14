@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/d5f1493466.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Raleway:wght@100;200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- JavaScript -->
+    <script defer src="../js/script.js"></script>
+
+    <title>Contacto - 9POINTS</title>
+</head>
+<body>
+
+    <header>
+        <nav class="menu containerLayout">
+            <!-- Logo -->
+            <a href="../index.html" class="menuLogo">
+                9Points&period;
+            </a>
+            <!-- Links de Navegación -->
+            <ul class="menuNav">
+                <li class="menuNavItems">
+                    <a href="../index.html" class="menuNavLink">Inicio</a>
+                </li>
+                <li class="menuNavItems">
+                    <a href="servicios.html" class="menuNavLink">Servicios</a>
+                </li>
+                <li class="menuNavItems">
+                    <a href="proyectos.html" class="menuNavLink">Proyectos</a>
+                </li>
+                <li class="menuNavItems">
+                    <a href="equipo.html" class="menuNavLink">Equipo</a>
+                </li>
+                <li class="menuNavItems">
+                    <a href="contacto.html" class="menuNavLink">Contacto</a>
+                </li>
+                <li class="menuNavItems">
+                    <a href="#" class="menuNavLink"><i class="fas fa-search"></i></a>
+                </li>
+            </ul>
+            <button class="nav-Toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>  
+        </nav>
+    </header>
+
+    <main class="marginSuperior">
+
+        <section>
+            <div class="inicioPagina bgColor containerGrid">
+                <!-- Titulo / Descripción -->
+                <h1 class="tituloPagina">Presencia Digital</h1>
+                <p class="descripcionPagina">
+                    Podemos potencias tu presencia digital y alcanzar los objetivos de engagement y conversión que buscas. <br>
+                    Comunicate con nosotros enviando un mail a 
+                    <strong><a href="mailto:hello@9points.com" class="fraseColor">hello@9points.com</a></strong>
+                    o escribirnos al 
+                    <strong><a href="#" class="fraseColor">Whatsapp</a></strong>
+                    <strong>¡Estamos para ayudarte!</strong>
+                </p>
+            </div>
+            
+            <div class="contacto">
+    
+                <!-- Ubicación -->
+                <div class="map-responsive">
+                    <iframe class="map-responsive__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d873.2413039562772!2d-64.18677769332649!3d-31.423570044272317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1636119387524!5m2!1ses-419!2sar" width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+    
+                <!-- Formulario de Contacto -->
+                <div class="formularioCard">
+                
+                    <form action="#" name="formulario">
+                        <fieldset class="formContacto">
+                                <label class="formLabelContacto" for="nombre">Nombre</label>
+                                <input class="formBorder" type="text" id="nombre" required>
+        
+                                <label class="formLabelContacto" for="email">E-mail</label>
+                                <input class="formBorder" type="email" id="email" required>
+        
+                                <label class="formLabelContacto" for="consulta"> Consulta</label>
+                                <textarea  cols="50" rows="5" id="consulta" required ></textarea>
+                        </fieldset>
+
+                        <fieldset class="formTrabajo">
+                                <legend class="tituloFormTrabajo" >¿Que tipo de trabajo quieres realizar?</legend>
+    
+                                <input class="formInputTrabajo" type="radio" value="1" name="btnTrabajo" id="desarrolloWeb">
+                                <label class="formLabelTrabajo" for="desarrolloWeb">Desarrollo Web</label>
+    
+                                <input class="formInputTrabajo" type="radio" value="2" name="btnTrabajo" id="desarrolloMobile"> 
+                                <label class="formLabelTrabajo" for="desarrolloMobile">Desarrollo mobile</label> 
+        
+                                <input class="formInputTrabajo" type="radio" value="3" name="btnTrabajo" id="eCommerce">
+                                <label class="formLabelTrabajo" for="eCommerce">eCommerce</label>
+    
+                                <input class="formInputTrabajo" type="radio" value="4" name="btnTrabajo" id="marketingDigital">
+                                <label class="formLabelTrabajo" for="marketingDigital">Marketing Digital</label>
+                        </fieldset>
+
+                        <fieldset class="btnFormulario">
+                            <input class="enviar" type="submit" value="ENVIAR">
+                            <input class="borrar" type="reset" value="BORRAR">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+
+        <ul class="listaIconos">
+            <li class="iconosFooter">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="iconosFooter">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="iconosFooter">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+
+        <p class="textFooter">2021 <span class="spanFooter">&copy;</span> 9POINTS</p>
+    
+    </footer>
+
+</body>
+</html>
