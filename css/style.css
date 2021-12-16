@@ -63,8 +63,12 @@ header {
     letter-spacing: 1.5px;
     padding: 0 0.5rem;
 }
+.menu .menuLogo:hover{
+    color: rgb(255, 255, 255);
+}
 
 .menu .menuNav {
+    line-height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -102,11 +106,6 @@ header {
 /* INICIO */
 .inicio {
     height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
 }
 
 /* al logo le di un display: none porque le quiero dar un efecto con javascript */
@@ -124,15 +123,15 @@ header {
     opacity: 0.9;
     max-width: 100%;
     height: auto;
-    /* z-index: 999; */
 }
 
 /* NOSOTROS */
 .nosotrosText {
     font-size: clamp(1.5em, 1em + 1vw, 2em);
     font-weight: 700;
-    letter-spacing: 1.5px;
-    padding: 5rem;
+    word-spacing: 1px;
+    line-height: normal;
+    padding: 2rem;
     margin: 4rem auto;
 }
 
@@ -141,22 +140,15 @@ header {
     font-size: 1.4em;
     font-weight: 900;
     letter-spacing: 2px;
-    text-align: center;
     margin: 6rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
 }
 
 .btnNosotros .btnNosotrosLink {
     padding: 1.25rem 3.75rem;
     color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
-    margin: 1rem;
-    width: 450px;
     transition: all 0.3s;
+    width: 450px;
 }
 
 .btnNosotros .btnNosotrosLink:hover {
@@ -168,9 +160,8 @@ header {
     padding: 1.25rem 3.75rem;
     color: rgb(255, 81, 0);
     border: 2px solid rgb(255, 81, 0);
-    margin: 1rem;
-    width: 450px;
     transition: all 0.3s;
+    width: 450px;
 }
 
 .btnNosotros .btnContactoLink:hover {
@@ -181,53 +172,56 @@ header {
 
 /* FOOTER */
 /* al footer del index le doy una clase especial porque solamente cambia de background en esa seccion */
+footer {
+    background-color: rgb(20, 20, 20);
+    color:rgb(255, 255, 255);
+}
 .footerIndex {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
 }
-
-footer {
-    padding: 1rem 0;
+footer .newsletter .btnNewsletter {
+    color: rgb(255, 81, 0);
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(255, 81, 0);
 }
-
+footer .newsletter .btnNewsletter:hover {
+    color: rgb(20, 20, 20);
+    border: 1px solid rgb(255, 81, 0);
+    background-color: rgb(255, 81, 0);
+}
 footer .textFooter {
+    font-size: 1.5em;
     font-family: 'Alfa Slab One', cursive;
-    text-align: center;
-    padding: 0.5rem;
-    margin: 1.5rem;
 }
 
 footer .textFooter .spanFooter {
-    font-size: 1.2em;
     font-family: 'Raleway', sans-serif;
 }
 
-footer .listaIconos {
-    margin: 1.5rem;
-    font-size: 3em;
-    display: flex;
-    justify-content: center;
+footer .iconosRedes li a:hover {
+    transform: scale(1.1);
 }
-
-footer .listaIconos .iconosFooter {
-    padding: 2rem;
-    transition: all 0.3s;
+footer .iconosRedes li a {
+    background-color: #edf2f4;
+    transition: all 0.1s ease-in-out; 
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
 }
-
-footer .listaIconos .iconosFooter:hover {
-    transform: scale(1.5);
-}
-
 /* COLORES ICONOS FOOTER */
-footer .listaIconos .iconosFooter .fa-facebook-f {
+.fa-facebook-f {
     color: rgb(59, 89, 152);
 }
 
-footer .listaIconos .iconosFooter .fa-twitter {
+.fa-twitter {
     color: rgb(29, 161, 242);
 }
 
-footer .listaIconos .iconosFooter .fa-instagram {
+.fa-instagram {
     color: rgb(225, 48, 108);
 }
 
@@ -387,7 +381,6 @@ footer .listaIconos .iconosFooter .fa-instagram {
     text-align: center;
 }
 
-
 .img-1 {
     grid-area: img-1;
     background-image: url(../image/img1.png);
@@ -495,96 +488,71 @@ footer .listaIconos .iconosFooter .fa-instagram {
 }
 
 /* CONTACTO */
-.contacto {
-    margin: 1rem 0;
-    padding: 2rem 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* Formulario Contacto */
-.formContacto {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.formContacto .formLabelContacto {
-    padding-bottom: 0.5rem;
-    font-size: 1.5em;
-    font-weight: 800;
-}
-
-.formContacto .formBorder {
-    padding: 0.4rem 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid rgb(0, 0, 0);
-}
-
-.formContacto textarea {
-    border: 1px solid rgb(0, 0, 0);
-}
-
-/* Formulario Trabajo */
-.formTrabajo {
-    padding: 1rem;
-    text-align: center;
-    border: none;
-}
-
-.formTrabajo .tituloFormTrabajo {
-    text-align: center;
-    padding: 0.2rem;
+.contacto .form-label {
     font-size: 1.5em;
     font-weight: 600;
 }
+/* UBICACION, EMAIL, TELEFONO */
 
-.formTrabajo .formLabelTrabajo {
-    width: 100px;
-    font-size: 1.2em;
-    font-weight: 200;
-    padding-right: 2rem;
+.contacto .info i {
+    color: rgb(255, 81, 0);
+    background-color: #edf2f4;
+    /* background-color: rgb(179, 178, 178); */
+    transition: all 0.3s ease-in-out; 
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
+}
+.contacto .info .infoTitulo {
+    padding: 0 0 0 60px;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+.contacto .info .infoDescripcion {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    color: rgb(116, 116, 116);
+}
+.contacto .info .email, 
+.contacto .info .telefono {
+    margin-top: 40px;
+}
+
+.contacto .info .ubicacion:hover i,
+.contacto .info .email:hover i,
+.contacto .info .telefono:hover i {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 81, 0);
 }
 
 /* BOTONES ENVIAR Y BORRAR FORMULARIO */
-.btnFormulario {
-    text-align: center;
-    border: none;
-    padding: 0.5rem;
-}
-
-.btnFormulario .enviar {
+.contacto .btnFormulario .enviar {
     color: rgb(255, 81, 0);
     border: 2px solid rgb(255, 81, 0);
     background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 0.625rem 4.375rem;
-    margin: 0 0.625rem;
     transition: all 0.3s;
 }
 
-.btnFormulario .enviar:hover {
+.contacto .btnFormulario .enviar:hover {
     transform: scale(1.1);
     background-color: rgb(255, 81, 0);
     color: rgb(255, 255, 255);
 }
 
-.btnFormulario .borrar {
+.contacto .btnFormulario .borrar {
     color: rgb(0, 0, 0);
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 0.625rem 4.375rem;
-    margin: 0 0.625rem;
     transition: all 0.3s;
 }
 
-.btnFormulario .borrar:hover {
+.contacto .btnFormulario .borrar:hover {
     transform: scale(1.1);
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -643,11 +611,6 @@ footer .listaIconos .iconosFooter .fa-instagram {
 
     .inicio .inicioImagen {
         width: 100%;
-    }
-
-    .nosotrosText {
-        padding: 1rem 3rem;
-        margin: 2rem auto;
     }
 
     /* ESTILOS GENERALES DEL INICIO DE LA PAGINA */
@@ -736,19 +699,8 @@ footer .listaIconos .iconosFooter .fa-instagram {
     /* CONTACTO */
     .contacto {
         padding: 1rem 0;
-        flex-direction: column;
     }
-
-    .map-responsive__iframe {
-        width: 450px;
-        height: 450px;
-    }
-
-    .formTrabajo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
 }
 
 @media only screen and (min-width: 600px) {
@@ -820,6 +772,9 @@ footer .listaIconos .iconosFooter .fa-instagram {
     }
     .img-8 {
       min-height: 41.5em;
+    }
+    footer .navFooter {
+        display: none;
     }
 }
 
@@ -921,11 +876,6 @@ footer .listaIconos .iconosFooter .fa-instagram {
 
 @media only screen and (min-width:1200px) {
 
-    /* INICIO */
-    .nosotrosText {
-        width: 65%;
-    }
-
     /* ESTILOS GENERALES DEL INICIO DE LA PAGINA */
     .containerGrid .tituloPagina {
         font-size: 12vw;
@@ -939,10 +889,5 @@ footer .listaIconos .iconosFooter .fa-instagram {
     /* SERVICIOS */
     .serviciosCardText {
         height: 110px;
-    }
-
-    /* CONTACTOS */
-    .contacto {
-        margin: 10rem 0;
     }
 }

@@ -11,10 +11,25 @@ const navMenu = document.querySelector(".menuNav");
          navToggle.setAttribute("aria-label", "Abrir menú");}
 });
 
-// const linksMenu = document.querySelectorAll(".menuNav a[href^='#']"); 
 
-// linksMenu.forEach(linksMenu =>{
-//     linksMenu.addEventListener("click", function() {
-//         navMenu.classList.remove("nav-menu_visible");
-//     }) 
-// })
+// BOOTSTRAP 
+// Validacion para los formularios!
+(function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
