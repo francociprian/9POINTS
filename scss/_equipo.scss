@@ -1,0 +1,44 @@
+/* EQUIPO*/
+.equipo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & .equipoCard {
+        padding: 2rem;
+        margin: 3rem;
+        text-align: center;
+        border: 1px solid $black_primary;
+        box-shadow: 5px 5px 12px -2px rgba(0, 0, 0, 0.48);
+        transition: all 0.5s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        & .equipoCardNombre {
+            font-size: 2em;
+            padding: 0.5rem 0;
+        }
+        & .equipoCardFuncion {
+            color: $sonic_silver;
+            padding: 0.3rem 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .equipo {
+        margin: 1rem 0;
+        & .equipoCard {
+            width: 400px;
+            height: auto;
+            padding: 0.5rem 0;
+            margin: 1.5rem;
+            & .equipoCardNombre {
+                font-size: 2.5em;
+            }
+        } 
+    }
+}

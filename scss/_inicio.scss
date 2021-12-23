@@ -1,0 +1,90 @@
+/* INICIO */
+.inicio {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & .inicioLogo {
+        display: none;
+        color: $white_primary;
+        font-family: $fontLogo;
+        font-size: 15vw;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+
+    & .inicioImagen {
+        opacity: 0.9;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.nosotrosText {
+    // font-size: clamp(1.5em, 1em + 1vw, 2em);
+    font-weight: 700;
+    word-spacing: 1px;
+    line-height: normal;
+    padding: 2rem;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.btnNosotros {
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    & .btnNosotrosLink {
+        padding: 1.25rem 3.75rem;
+        color: $white_primary;
+        border: 2px solid $white_primary;
+        border-radius: 3px;
+        transition: all 0.3s;
+        width: 450px;
+        margin: 1rem;
+
+        &:hover {
+            color: $black_primary;
+            background-color: $white_primary;
+        }
+    }
+
+    & .btnContactoLink {
+        padding: 1.25rem 3.75rem;
+        color: $orange_aerospace;
+        border: 2px solid $orange_aerospace;
+        border-radius: 3px;
+        transition: all 0.3s;
+        width: 450px;
+        margin: 1rem;
+
+        &:hover {
+            color: $black_primary;
+            background-color: $orange_aerospace;
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .inicio {
+        margin-top: 3.75rem;
+        height: 85vh;
+        & .inicioImagen {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (min-width: 600px) {
+    .inicio {
+        margin-top: 3.75rem;
+    }
+}

@@ -1,0 +1,67 @@
+/*FOOTER*/ 
+.footerIndex {
+    color: $black_primary;
+    background-color: $white_primary;
+}
+
+footer {
+    background-color: $black_secundary;
+    color:$white_primary;
+
+    & .newsletter {
+        & .btnNewsletter {
+            color: $orange_aerospace;
+            background-color: $black_secundary;
+            border: 1px solid $orange_aerospace;
+
+            &:hover {
+                color: $black_secundary;
+                border: 1px solid $orange_aerospace;
+                background-color: $orange_aerospace;
+            }
+        }
+    }
+
+    & .textFooter {
+        font-size: 1.5em;
+        font-family: $fontLogo;
+
+        & .spanFooter {
+            font-family: $fontPrincipal;
+        }
+
+    }
+
+    & .iconosRedes li a {
+        background-color: $alice_blue;
+        transition: all 0.1s ease-in-out; 
+        width: 60px;
+        height: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content:center;
+        border-radius: 50%;
+
+        & .fa-facebook-f {
+            color: rgb(59, 89, 152);
+        }
+        & .fa-twitter {
+            color: rgb(29, 161, 242);
+        }
+        & .fa-instagram {
+            color: rgb(225, 48, 108);
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        & .navFooter {
+            display: none;
+        }
+    }
+}

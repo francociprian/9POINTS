@@ -1,0 +1,73 @@
+/* CONTACTO */
+.contacto {
+    & .info {
+
+        & .ubicacion, .email, .telefono {
+            margin-top: 40px;
+
+            & i {
+                color: $orange_aerospace;
+                background-color: $alice_blue;
+                /* background-color: rgb(179, 178, 178); */
+                transition: all 0.3s ease-in-out; 
+                width: 60px;
+                height: 60px;
+                display: inline-flex;
+                align-items: center;
+                justify-content:center;
+                border-radius: 50%;
+            }
+
+            & .infoTitulo {
+                padding: 0 0 0 60px;
+                font-size: 1.5em;
+                font-weight: 600;
+                margin-bottom: 5px;
+                color: $black_primary;
+            }
+            & .infoDescripcion {
+                padding: 0 0 0 60px;
+                margin-bottom: 0;
+                font-size: 0.9em;
+                color: $sonic_silver;
+            }
+            &:hover {
+                i {
+                    color: $white_primary;
+                    background-color: $orange_aerospace;  
+                }
+            }
+        }  
+    }
+
+    & .btnFormulario {
+        & .enviar {
+            color: $orange_aerospace;
+            border: 2px solid $orange_aerospace;
+            background-color: $white_primary;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.1);
+                background-color: $orange_aerospace;
+                color: $white_primary;
+            }
+        }
+        & .borrar {
+            color: $black_primary;
+            border: 2px solid $black_primary;
+            background-color: $white_primary;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.1);
+                background-color: $black_primary;
+                color: $white_primary;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .contacto {
+        padding: 1rem 0;
+    }
+}
