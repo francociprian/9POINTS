@@ -23,7 +23,7 @@
 }
 
 .nosotrosText {
-    // font-size: clamp(1.5em, 1em + 1vw, 2em);
+    font-size: calc(1em + 0.9vw);
     font-weight: 700;
     word-spacing: 1px;
     line-height: normal;
@@ -81,6 +81,9 @@
         & .inicioImagen {
             width: 100%;
         }
+    }
+    .nosotrosText{
+        font-size: calc(1em + 2vw);
     }
 }
 @media only screen and (min-width: 600px) {
