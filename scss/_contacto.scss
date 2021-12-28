@@ -19,14 +19,14 @@
             }
 
             & .infoTitulo {
-                padding: 0 0 0 60px;
+                padding: 0 0 0 40px;
                 font-size: 1.5em;
                 font-weight: 600;
                 margin-bottom: 5px;
                 color: $black_primary;
             }
             & .infoDescripcion {
-                padding: 0 0 0 60px;
+                padding: 0 0 0 40px;
                 margin-bottom: 0;
                 font-size: 0.9em;
                 color: $sonic_silver;
@@ -63,11 +63,5 @@
                 color: $white_primary;
             }
         }
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    .contacto {
-        padding: 1rem 0;
     }
 }

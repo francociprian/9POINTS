@@ -1,93 +1,29 @@
 /* PROYECTOS */
-.proyecto {
+.proyectos {
     margin: 10rem 0;
     width: 100%;
     display: flex;
     flex-direction: column;
 
-    & .proyectoContainer {
+    &__container {
         font-size: 10px;
         width: 100%;
         margin: auto;
         padding: 0 4.5em;
-
-        & .proyectoGaleria {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            grid-gap: 1.5em;
-            grid-template-areas: "img-1 img-2 img-3 img-3"
-                "img-4 img-4 img-3 img-3"
-                "img-5 img-5 img-6 img-7"
-                "img-8 img-8 img-9 img-10"
-                "img-8 img-8 img-12 img-12"
-                "img-11 img-11 img-12 img-12";
-
-            & .img-1 {
-                grid-area: img-1;
-                background-image: url(../image/img1.png);
-                flex-direction: column;
-            }
-            & .img-2 {
-                grid-area: img-2;
-                background-image: url(../image/img2.jpg);
-                flex-direction: column;
-            }
-            & .img-3 {
-                grid-area: img-3;
-                min-height: 81.5em;
-                background-image: url(../image/img3.jpg);
-                flex-direction: column;
-            }
-            & .img-4 {
-                grid-area: img-4;
-                background-image: url(../image/img4.png);
-                flex-direction: column;
-            }
-            & .img-5 {
-                grid-area: img-5;
-                background-image: url(../image/img5.jpg);
-                flex-direction: column;
-            }
-            & .img-6 {
-                grid-area: img-6;
-                background-image: url(../image/img6.jpg);
-                flex-direction: column;
-            }
-            & .img-7 {
-                grid-area: img-7;
-                background-image: url(../image/img7.jpg);
-                flex-direction: column;
-            }
-            & .img-8 {
-                grid-area: img-8;
-                min-height: 81.5em;
-                background-image: url(../image/img8.png);
-                flex-direction: column;
-            }
-            & .img-9 {
-                grid-area: img-9;
-                background-image: url(../image/img9.jpg);
-                flex-direction: column;
-            }
-            & .img-10 {
-                grid-area: img-10;
-                background-image: url(../image/img10.png);
-                flex-direction: column;
-            }
-            & .img-11 {
-                grid-area: img-11;
-                background-image: url(../image/img11.png);
-                flex-direction: column;
-            }
-            & .img-12 {
-                grid-area: img-12;
-                min-height: 81.5em;
-                background-image: url(../image/img12.png);
-                flex-direction: column;
-            }
-
-            & div {
+    }
+    &__galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5em;
+        grid-template-areas: 
+        "img-1 img-2 img-3 img-3"
+        "img-4 img-4 img-3 img-3"
+        "img-5 img-5 img-6 img-7"
+        "img-8 img-8 img-9 img-10"
+        "img-8 img-8 img-12 img-12"
+        "img-11 img-11 img-12 img-12";
+            div {
                 width: 100%;
                 height: 40em;
                 background-position: center;
@@ -97,98 +33,108 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
+                    &:hover p,
+                    &:hover h2, 
+                    &:hover::before{
+                        opacity: .9;
+                    }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.924);
+                opacity: 0;
+                transition: opacity .8s;
+            }
 
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    background-color: rgba(0, 0, 0, 0.924);
-                    opacity: 0;
-                    transition: opacity .8s;
-                }
+            & h2,p {
+                position: relative;
+                z-index: 99;
+                padding: 1em 0px 1em 0px;
+                opacity: 0;
+                transition: opacity .5s;
+                color: $white_primary;
+            }
 
-                & h2,p {
-                    position: relative;
-                    z-index: 99;
-                    padding: 1em 0px 1em 0px;
-                    opacity: 0;
-                    transition: opacity .5s;
-                    color: $white_primary;
-                }
+            & .proyectoWorkTitulo {
+                font-size: 2em;
+                margin-bottom: -20px;
+                text-align: center;
+            }
 
-                &:hover {
-                    & h2,p,
-                        ::before {
-                            opacity: .9;
-                        }
-                }
-
-                & .proyectoWorkTitulo {
-                    font-size: 2em;
-                    margin-bottom: -20px;
-                    text-align: center;
-                }
-
-                & .proyectoWorkDescripcion {
-                    font-size: 1.5em;
-                    margin-bottom: 11px;
-                    text-align: center;
-                }
+            & .proyectoWorkDescripcion {
+                font-size: 1.5em;
+                margin-bottom: 11px;
+                text-align: center;
             }
         }
 
-    }
-}
 
-@media only screen and (max-width: 599px) {
-    .proyecto{
-        & .proyectoContainer {
-            & .proyectoGaleria {
-                grid-template-areas:    "img-1 img-1 img-1 img-1"
-                                        "img-2 img-2 img-2 img-2"
-                                        "img-3 img-3 img-3 img-3"
-                                        "img-4 img-4 img-4 img-4"
-                                        "img-5 img-5 img-5 img-5"
-                                        "img-6 img-6 img-6 img-6"
-                                        "img-7 img-7 img-7 img-7"
-                                        "img-8 img-8 img-8 img-8"
-                                        "img-9 img-9 img-9 img-9"
-                                        "img-10 img-10 img-10 img-10"
-                                        "img-11 img-11 img-11 img-11"
-                                        "img-12 img-12 img-12 img-12"
-                                        !important;
-                & div {
-                    min-height: 25em;
-                    height: 25em;
-                }
-            }
-            & .img-3, .img-6 {
-                min-height: 25em;
-                height: 25em;
-            }
+        & .img-1 {
+            grid-area: img-1;
+            background-image: url(../image/img1.png);
+            flex-direction: column;
         }
-    }
-}
-@media only screen and (max-width: 768px) { 
-    .proyecto{
-        & .proyectoContainer {
-            & .proyectoGaleria {
-                grid-template-areas:    "img-1 img-2 img-3 img-3"
-                                        "img-4 img-4 img-3 img-3"
-                                        "img-5 img-5 img-6 img-7"
-                                        "img-8 img-8 img-9 img-10"
-                                        "img-8 img-8 img-12 img-12"
-                                        "img-11 img-11 img-12 img-12";
-                & div {
-                    height: 20em;
-                }
-                & .img-3, .img-8, .img-12 {
-                    min-height: 41.5em;
-                }
-            }
+        & .img-2 {
+            grid-area: img-2;
+            background-image: url(../image/img2.jpg);
+            flex-direction: column;
+        }
+        & .img-3 {
+            grid-area: img-3;
+            min-height: 81.5em;
+            background-image: url(../image/img3.jpg);
+            flex-direction: column;
+        }
+        & .img-4 {
+            grid-area: img-4;
+            background-image: url(../image/img4.png);
+            flex-direction: column;
+        }
+        & .img-5 {
+            grid-area: img-5;
+            background-image: url(../image/img5.jpg);
+            flex-direction: column;
+        }
+        & .img-6 {
+            grid-area: img-6;
+            background-image: url(../image/img6.jpg);
+            flex-direction: column;
+        }
+        & .img-7 {
+            grid-area: img-7;
+            background-image: url(../image/img7.jpg);
+            flex-direction: column;
+        }
+        & .img-8 {
+            grid-area: img-8;
+            min-height: 81.5em;
+            background-image: url(../image/img8.png);
+            flex-direction: column;
+        }
+        & .img-9 {
+            grid-area: img-9;
+            background-image: url(../image/img9.jpg);
+            flex-direction: column;
+        }
+        & .img-10 {
+            grid-area: img-10;
+            background-image: url(../image/img10.png);
+            flex-direction: column;
+        }
+        & .img-11 {
+            grid-area: img-11;
+            background-image: url(../image/img11.png);
+            flex-direction: column;
+        }
+        & .img-12 {
+            grid-area: img-12;
+            min-height: 81.5em;
+            background-image: url(../image/img12.png);
+            flex-direction: column;
         }
     }
 }

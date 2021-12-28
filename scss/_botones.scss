@@ -1,0 +1,33 @@
+.btn__white {
+    color: $white_primary;
+    border: 2px solid $white_primary;
+    border-radius: 3px;
+
+    &--light {
+        @extend .btn__white;
+        background-color: $white_primary;
+    }
+
+    &--dark {
+        @extend .btn__white;
+        background-color: $black_primary;
+    }
+}
+
+
+
+.btn__orange {
+    color: $orange_aerospace;
+    border: 2px solid $orange_aerospace;
+    border-radius: 3px;
+
+    &--light {
+        @extend .btn__orange;
+        background-color: $white_primary;
+    }
+    
+    &--dark {
+        @extend .btn__orange;
+        background-color: $black_primary;
+    }
+}

@@ -1,12 +1,12 @@
 /* INICIO */
-.inicio {
+.main {
     height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
-    & .inicioLogo {
+    &__logo {
         display: none;
         color: $white_primary;
         font-family: $fontLogo;
@@ -15,7 +15,7 @@
         letter-spacing: 5px;
     }
 
-    & .inicioImagen {
+    &__imagen {
         opacity: 0.9;
         max-width: 100%;
         height: auto;
@@ -33,9 +33,6 @@
 }
 
 .btnNosotros {
-    font-size: 1.2em;
-    font-weight: 500;
-    letter-spacing: 2px;
     margin: 6rem 0;
     display: flex;
     justify-content: center;
@@ -43,7 +40,10 @@
     flex-wrap: wrap;
     text-align: center;
 
-    & .btnNosotrosLink {
+    .btnNosotrosLink {
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: 2px;
         padding: 1.25rem 3.75rem;
         color: $white_primary;
         border: 2px solid $white_primary;
@@ -58,7 +58,10 @@
         }
     }
 
-    & .btnContactoLink {
+    .btnContactoLink {
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: 2px;
         padding: 1.25rem 3.75rem;
         color: $orange_aerospace;
         border: 2px solid $orange_aerospace;
@@ -71,23 +74,5 @@
             color: $black_primary;
             background-color: $orange_aerospace;
         }
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    .inicio {
-        margin-top: 3.75rem;
-        height: 85vh;
-        & .inicioImagen {
-            width: 100%;
-        }
-    }
-    .nosotrosText{
-        font-size: calc(1em + 2vw);
-    }
-}
-@media only screen and (min-width: 600px) {
-    .inicio {
-        margin-top: 3.75rem;
     }
 }

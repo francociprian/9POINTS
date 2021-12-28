@@ -1,80 +1,18 @@
 /* ESTILOS GENERALES DEL INICIO DE LAs PAGINAS */
-.gridInicio {
+.inicio {
     display: grid;
     height: 100vh;
 
-    & .tituloPagina {
+    &__titulo {
         grid-area: tituloPagina;
         font-weight: 900;
         padding: 1rem;
         align-self: center;
         justify-self: start;
     }
-    & .descripcionPagina {
+    &__descripcion {
         grid-area: descripcionPagina;
         align-self: center;
         justify-self: end;
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    .gridInicio {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-auto-flow: row dense;
-        align-items: center;
-        grid-template-areas:
-            "tituloPagina tituloPagina"
-            "descripcionPagina descripcionPagina";
-        & .tituloPagina {
-             font-size: 6em;
-        }
-        & .descripcionPagina {
-            padding: 1rem 2rem 1rem 2rem;
-            font-size: 1.4em;
-            align-self: flex-start;
-        }
-    }
-}
-@media only screen and (min-width: 600px) {
-    .gridInicio {
-        grid-template-columns: 4em 1fr 1fr 4em;
-        grid-template-areas:
-                            ". tituloPagina tituloPagina ."
-                            ". descripcionPagina descripcionPagina .";
-
-        & .tituloPagina {
-            padding: 0;
-            font-size: calc(2.2em + 10.97vw)
-        }
-        & .descripcionPagina {
-            padding: 1rem;
-            font-size: 1.7em;
-            width: 100%;
-        }
-    }
-}
-@media only screen and (min-width:1024px) {
-
-    .gridInicio {
-        grid-template-columns: 9.5em 1fr 1fr 9.5em;
-        grid-template-rows: 1fr 1fr;
-        grid-auto-flow: row dense;
-        grid-template-areas:
-                            ". tituloPagina tituloPagina ."
-                            ". descripcionPagina descripcionPagina .";
-    }
-
-}
-@media only screen and (min-width:1200px) {
-
-    .gridInicio {
-        & .tituloPagina {
-            font-size: 12vw;
-        }
-        & .descripcionPagina {
-            font-size: 2em;
-            width: 80%;
-        }
     }
 }

@@ -12,7 +12,7 @@ header {
     display: flex;
     flex-direction: row;
 
-    & .menuLogo {
+    &__logo {
         font-size: 2em;
         font-family: $fontLogo;
         line-height: 65px;
@@ -23,32 +23,31 @@ header {
         }
     }
 
-    & .menuNav {
+    &__lista {
         line-height: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin-left: auto;
+    }
 
-        & .menuNavItems {
-            padding: 0.6rem;
-            margin: 0 0.3rem;
-
-            & .menuNavLink {
-                letter-spacing: 1.5px;
-                font-weight: 400;
-                font-size: 1.2em;
-                transition: .4s cubic-bezier(0.15, 0.10, 0.355, 1);
-                &:hover {
-                    color: $orange_aerospace;
-                }
-            }
+    &__items {
+        padding: 0.6rem;
+        margin: 0 0.3rem;
+    }
+    &__link {
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 1.2em;
+        transition: .4s cubic-bezier(0.15, 0.10, 0.355, 1);
+        &:hover {
+            color: $orange_aerospace;
         }
     }
 
     
-    & .nav-Toggle {
+    &__toggle {
         color: $white_primary;
         background: none;
         border: none;
@@ -57,90 +56,4 @@ header {
         cursor: pointer;
         display: none;
     } 
-}
-
-@media only screen and (max-width: 599px) {
-    .menu {
-        justify-content: space-between;
-        & .menuLogo {
-            padding: 0 1.5rem;
-        }
-        & .menuNav {
-            flex-direction: column;
-            justify-content: flex-start;
-            background-color: $black_secundary; 
-            z-index: 999;
-
-            position: fixed;
-            top: 65px;
-            padding: 2em 0;
-    
-            width: 100%;
-            height: 100%;
-            overflow-y: auto;
-    
-            left: 100%;
-            transition: left .6s cubic-bezier(.68, -.55, .265, 1.55);
-
-            & .menuNavItems {
-                font-size: 2em;
-                line-height: 4rem;
-                text-transform: uppercase;
-            }
-        }
-        & .nav-Toggle {
-            display: block;
-            padding: 0 1rem;
-        }
-        & .nav-menu_visible {
-            left: 0;
-        }
-    }
-}
-@media only screen and (min-width: 600px) {
-    .menu {
-        & .menuLogo {
-        padding: 0 1rem;}
-    }
-}
-@media only screen and (min-width:1024px) {
-    .menu {
-        padding: 0 2em;
-    }
-}
-@media only screen and (max-width:1024px) {
-    .menu {
-        justify-content: space-between;
-        & .menuLogo {
-            padding: 0 1.5rem;
-        }
-        & .menuNav {
-            flex-direction: column;
-            justify-content: flex-start;
-            background-color: $black_secundary;
-            z-index: 1000;
-            position: fixed;
-            top: 65px;
-            padding: 2em 0;
-    
-            width: 100%;
-            height: 100%;
-            overflow-y: auto;
-    
-            left: 100%;
-            transition: left .6s cubic-bezier(.68, -.55, .265, 1.55);
-            & .menuNavItems {
-                font-size: 2em;
-                line-height: 4rem;
-                text-transform: uppercase;
-            }
-        }
-        & .nav-Toggle {
-            display: block;
-            padding: 0 1rem;
-        }
-        & .nav-menu_visible {
-            left: 0;
-        }
-    }
 }
