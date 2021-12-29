@@ -74,7 +74,11 @@
     }
     /* PROYECTOS */
     .proyectos{
+        &__container{
+            padding: 0 1.5rem;
+        }
         &__galeria {
+            gap: 3rem;
             grid-template-areas:    "img-1 img-1 img-1 img-1"
                                     "img-2 img-2 img-2 img-2"
                                     "img-3 img-3 img-3 img-3"
@@ -88,17 +92,11 @@
                                     "img-11 img-11 img-11 img-11"
                                     "img-12 img-12 img-12 img-12"
                                     !important;
-                                        div {
-                                            min-height: 25em;
-                                            height: 25em;
-                                        }
-
-                                        .img-3, 
-                                        .img-6 {
-                                            min-height: 25em;
-                                            height: 25em;
-                                        }
-
+        }
+        .img-3,
+        .img-8,
+        .img-12 {
+            min-height: 35em;
         }
     }
     /* EQUIPO */
@@ -175,14 +173,6 @@
                                     "img-8 img-8 img-9 img-10"
                                     "img-8 img-8 img-12 img-12"
                                     "img-11 img-11 img-12 img-12";
-            div {
-                height: 20em;
-            }
-            .img-3, 
-            .img-8, 
-            .img-12 {
-                min-height: 41.5em;
-            }
         }
     }
 }

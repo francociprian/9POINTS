@@ -229,7 +229,7 @@ footer {
 
 /* PROYECTOS */
 .proyectos {
-  margin: 10rem 0;
+  margin: 5rem 0;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -237,12 +237,12 @@ footer {
     font-size: 10px;
     width: 100%;
     margin: auto;
-    padding: 0 4.5em; }
+    padding: 0 4rem; }
   .proyectos__galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 1.5em;
+    gap: 1.3rem;
     grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12"; }
     .proyectos__galeria div {
       width: 100%;
@@ -266,72 +266,71 @@ footer {
         left: 0;
         background-color: rgba(0, 0, 0, 0.924);
         opacity: 0;
-        transition: opacity .8s; }
+        transition: opacity .5s; }
       .proyectos__galeria div h2, .proyectos__galeria div p {
         position: relative;
         z-index: 99;
-        padding: 1em 0px 1em 0px;
         opacity: 0;
         transition: opacity .5s;
-        color: white; }
-      .proyectos__galeria div .proyectoWorkTitulo {
+        color: white;
+        text-align: center; }
+      .proyectos__galeria div .proyecto__titulo {
         font-size: 2em;
-        margin-bottom: -20px;
-        text-align: center; }
-      .proyectos__galeria div .proyectoWorkDescripcion {
+        text-decoration: underline;
+        font-weight: 700; }
+      .proyectos__galeria div .proyecto__descripcion {
         font-size: 1.5em;
-        margin-bottom: 11px;
-        text-align: center; }
+        padding-bottom: 1rem; }
     .proyectos__galeria .img-1 {
       grid-area: img-1;
-      background-image: url(../image/img1.png);
+      background-image: url(../image/proyectos/img1.webp);
       flex-direction: column; }
     .proyectos__galeria .img-2 {
       grid-area: img-2;
-      background-image: url(../image/img2.jpg);
+      background-image: url(../image/proyectos/img2.webp);
       flex-direction: column; }
     .proyectos__galeria .img-3 {
       grid-area: img-3;
       min-height: 81.5em;
-      background-image: url(../image/img3.jpg);
+      background-image: url(../image/proyectos/img3.webp);
       flex-direction: column; }
     .proyectos__galeria .img-4 {
       grid-area: img-4;
-      background-image: url(../image/img4.png);
+      background-image: url(../image/proyectos/img4.webp);
       flex-direction: column; }
     .proyectos__galeria .img-5 {
       grid-area: img-5;
-      background-image: url(../image/img5.jpg);
+      background-image: url(../image/proyectos/img5.webp);
       flex-direction: column; }
     .proyectos__galeria .img-6 {
       grid-area: img-6;
-      background-image: url(../image/img6.jpg);
+      background-image: url(../image/proyectos/img6.webp);
       flex-direction: column; }
     .proyectos__galeria .img-7 {
       grid-area: img-7;
-      background-image: url(../image/img7.jpg);
+      background-image: url(../image/proyectos/img7.webp);
       flex-direction: column; }
     .proyectos__galeria .img-8 {
       grid-area: img-8;
       min-height: 81.5em;
-      background-image: url(../image/img8.png);
+      background-image: url(../image/proyectos/img8.webp);
       flex-direction: column; }
     .proyectos__galeria .img-9 {
       grid-area: img-9;
-      background-image: url(../image/img9.jpg);
+      background-image: url(../image/proyectos/img9.webp);
       flex-direction: column; }
     .proyectos__galeria .img-10 {
       grid-area: img-10;
-      background-image: url(../image/img10.png);
+      background-image: url(../image/proyectos/img10.webp);
       flex-direction: column; }
     .proyectos__galeria .img-11 {
       grid-area: img-11;
-      background-image: url(../image/img11.png);
+      background-image: url(../image/proyectos/img11.webp);
       flex-direction: column; }
     .proyectos__galeria .img-12 {
       grid-area: img-12;
       min-height: 81.5em;
-      background-image: url(../image/img12.png);
+      background-image: url(../image/proyectos/img12.webp);
       flex-direction: column; }
 
 /* EQUIPO*/
@@ -458,15 +457,15 @@ footer {
   .servicios__boxes div {
     width: 100%; }
   /* PROYECTOS */
+  .proyectos__container {
+    padding: 0 1.5rem; }
   .proyectos__galeria {
+    gap: 3rem;
     grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12" !important; }
-    .proyectos__galeria div {
-      min-height: 25em;
-      height: 25em; }
-    .proyectos__galeria .img-3,
-    .proyectos__galeria .img-6 {
-      min-height: 25em;
-      height: 25em; }
+  .proyectos .img-3,
+  .proyectos .img-8,
+  .proyectos .img-12 {
+    min-height: 35em; }
   /* EQUIPO */
   .equipo {
     margin: 1rem 0; }
@@ -513,13 +512,7 @@ footer {
       padding: 0 1rem; }
   /* PROYECTOS */
   .proyectos__galeria {
-    grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12"; }
-    .proyectos__galeria div {
-      height: 20em; }
-    .proyectos__galeria .img-3,
-    .proyectos__galeria .img-8,
-    .proyectos__galeria .img-12 {
-      min-height: 41.5em; } }
+    grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12"; } }
 
 @media only screen and (min-width: 1024px) {
   /* BARRA DE NAVEGACION */
