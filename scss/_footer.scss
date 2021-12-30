@@ -8,31 +8,29 @@ footer {
     background-color: $black_secundary;
     color:$white_primary;
 
-    & .newsletter {
-        & .btnNewsletter {
-            color: $orange_aerospace;
-            background-color: $black_secundary;
-            border: 1px solid $orange_aerospace;
-
+    .newsletter {
+        .btnNewsletter {
+            padding: 0.4rem 3.20rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s;
             &:hover {
                 color: $black_secundary;
-                border: 1px solid $orange_aerospace;
                 background-color: $orange_aerospace;
             }
         }
     }
 
-    & .textFooter {
+    .textFooter {
         font-size: 1.5em;
         font-family: $fontLogo;
 
-        & .spanFooter {
+        .spanFooter {
             font-family: $fontPrincipal;
         }
 
     }
 
-    & .iconosRedes li a {
+    .iconosRedes li a {
         background-color: $alice_blue;
         transition: all 0.1s ease-in-out; 
         width: 60px;

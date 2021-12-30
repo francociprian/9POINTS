@@ -1,3 +1,10 @@
+@mixin button ($font-size,$font-weight,$letter-spacing,$padding,$margin){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing; 
+    padding: $padding;
+    margin:$margin;  
+}
 /* CONTACTO */
 .contacto {
     & .info {
@@ -40,11 +47,9 @@
         }  
     }
 
-    & .btnFormulario {
-        & .enviar {
-            color: $orange_aerospace;
-            border: 2px solid $orange_aerospace;
-            background-color: $white_primary;
+    & .formulario {
+        &__enviar {
+            @include button (1em, 500, 2px, 0.4rem 3.20rem, 0 0.5rem);
             transition: all 0.3s;
             &:hover {
                 transform: scale(1.1);
@@ -52,10 +57,8 @@
                 color: $white_primary;
             }
         }
-        & .borrar {
-            color: $black_primary;
-            border: 2px solid $black_primary;
-            background-color: $white_primary;
+        &__borrar {
+            @include button (1em, 500, 2px, 0.4rem 3.20rem, 0 0.5rem);
             transition: all 0.3s;
             &:hover {
                 transform: scale(1.1);

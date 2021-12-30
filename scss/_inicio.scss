@@ -1,10 +1,30 @@
+@mixin flex-row ($justify-content, $align-items, $flex-wrap){
+    display: flex;
+	flex-direction: row;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+}
+@mixin flex-column ($justify-content, $align-items, $flex-wrap){
+	display: flex;
+	flex-direction:column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin button ($font-size,$font-weight,$letter-spacing,$width,$padding,$margin){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing; 
+    width: $width;
+    padding: $padding;
+    margin:$margin;  
+}
 /* INICIO */
 .main {
     height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-column(space-evenly, center, nowrap);
 
     &__logo {
         display: none;
@@ -32,25 +52,14 @@
     text-align: center;
 }
 
-.btnNosotros {
+.nosotros {
     margin: 6rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     text-align: center;
+    @include flex-row (center,center,wrap);
 
-    .btnNosotrosLink {
-        font-size: 1.2em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        padding: 1.25rem 3.75rem;
-        color: $white_primary;
-        border: 2px solid $white_primary;
-        border-radius: 3px;
+    &__proyectos {
+        @include button (1.2em, 500, 2px, 450px, 0.8rem 3.20rem,1rem);
         transition: all 0.3s;
-        width: 450px;
-        margin: 1rem;
 
         &:hover {
             color: $black_primary;
@@ -58,17 +67,9 @@
         }
     }
 
-    .btnContactoLink {
-        font-size: 1.2em;
-        font-weight: 500;
-        letter-spacing: 2px;
-        padding: 1.25rem 3.75rem;
-        color: $orange_aerospace;
-        border: 2px solid $orange_aerospace;
-        border-radius: 3px;
+    &__contacto {
+        @include button (1.2em, 500, 2px, 450px, 0.8rem 3.20rem, 1rem);
         transition: all 0.3s;
-        width: 450px;
-        margin: 1rem;
 
         &:hover {
             color: $black_primary;
