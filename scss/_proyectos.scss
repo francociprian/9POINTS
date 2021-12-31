@@ -35,7 +35,7 @@
                 align-items: center;
                 justify-content: flex-end;
                     &:hover p,
-                    &:hover h2, 
+                    &:hover h3, 
                     &:hover::before{
                         opacity: .9;
                     }
@@ -52,7 +52,7 @@
                         transition: opacity .7s;
                     }
 
-                    & h2,p {
+                    & h3,p {
                         position: relative;
                         z-index: 99;
                         opacity: 0;

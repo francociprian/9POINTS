@@ -256,7 +256,7 @@ footer {
       align-items: center;
       justify-content: flex-end; }
       .proyectos__galeria article:hover p,
-      .proyectos__galeria article:hover h2, .proyectos__galeria article:hover::before {
+      .proyectos__galeria article:hover h3, .proyectos__galeria article:hover::before {
         opacity: .9; }
       .proyectos__galeria article::before {
         content: '';
@@ -268,7 +268,7 @@ footer {
         background-color: rgba(0, 0, 0, 0.924);
         opacity: 0;
         transition: opacity .7s; }
-      .proyectos__galeria article h2, .proyectos__galeria article p {
+      .proyectos__galeria article h3, .proyectos__galeria article p {
         position: relative;
         z-index: 99;
         opacity: 0;
