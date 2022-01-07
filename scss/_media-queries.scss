@@ -46,6 +46,17 @@
     .nosotrosText{
         font-size: calc(1em + 2vw);
     }
+    /* FOOTER */
+    footer {
+        .newsletter {
+            &__form {
+                row-gap: 12px;
+            }
+            &__form-imput {
+                width: 92%;
+            }
+        }
+    }
     /* INICIO PAGINAS */
     .inicio {
         grid-template-columns: 1fr;
@@ -167,6 +178,13 @@
                                     "img-8 img-8 img-9 img-10"
                                     "img-8 img-8 img-12 img-12"
                                     "img-11 img-11 img-12 img-12";
+        }
+    }
+    /* FOOTER*/ 
+    footer{
+        .footer {
+            flex-direction: column-reverse;
+            row-gap: 1.5rem;
         }
     }
 }

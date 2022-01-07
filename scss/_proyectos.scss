@@ -11,6 +11,11 @@
         margin: auto;
         padding: 0 4rem;
         cursor: pointer;
+        &-title {
+            font-size: 4em;
+            font-weight: 300;
+            padding-bottom: 0.5rem;
+        }
     }
     &__galeria {
         display: grid;
@@ -47,7 +52,7 @@
                         height: 100%;
                         top: 0;
                         left: 0;
-                        background-color: rgba(0, 0, 0, 0.924);
+                        background-color: rgba(0, 0, 0, 0.938);
                         opacity: 0;
                         transition: opacity .7s;
                     }
@@ -62,14 +67,16 @@
                     }
 
                     & .proyecto__titulo {
-                        font-size: 2em;
-                        text-decoration: underline;
-                        font-weight: 700;
+                        font-size: 2.5em;
+                        text-decoration-line: underline;
+                        text-decoration-color: rgba(237, 242, 244, 0.623);
+                        font-weight: 300;
+                        margin-bottom: 0.5rem;
                     }
 
                     & .proyecto__descripcion {
                         font-size: 1.5em;
-                        padding-bottom: 1rem;
+                        padding-bottom: 2rem;
                     }
         }
 

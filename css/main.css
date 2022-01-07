@@ -149,37 +149,88 @@ header {
   background-color: white; }
 
 footer {
+  padding: 1.5rem 0;
   background-color: #141414;
   color: white; }
-  footer .newsletter .btnNewsletter {
-    padding: 0.4rem 3.20rem;
-    margin: 0 0.5rem;
-    transition: all 0.3s; }
-    footer .newsletter .btnNewsletter:hover {
-      color: #141414;
-      background-color: #ff5100; }
-  footer .textFooter {
-    font-size: 1.5em;
-    font-family: "Alfa Slab One", cursive; }
-    footer .textFooter .spanFooter {
-      font-family: "Raleway", sans-serif; }
-  footer .iconosRedes li a {
-    background-color: #edf2f4;
-    transition: all 0.1s ease-in-out;
-    width: 60px;
-    height: 60px;
-    display: inline-flex;
-    align-items: center;
+  footer .newsletter {
+    display: flex;
     justify-content: center;
-    border-radius: 50%; }
-    footer .iconosRedes li a .fa-facebook-f {
-      color: #3b5998; }
-    footer .iconosRedes li a .fa-twitter {
-      color: #1da1f2; }
-    footer .iconosRedes li a .fa-instagram {
-      color: #e1306c; }
-    footer .iconosRedes li a:hover {
-      transform: scale(1.1); }
+    align-items: center;
+    text-align: center;
+    padding: 0 0.4rem; }
+    footer .newsletter__titulo {
+      font-size: calc(1.275rem + .3vw);
+      padding-bottom: 0.5rem; }
+    footer .newsletter__descripcion {
+      font-size: 1rem;
+      padding-bottom: 0.8rem; }
+    footer .newsletter__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 0.5rem 0; }
+    footer .newsletter__form-imput {
+      width: 60%;
+      padding: 0.375rem 0.75rem;
+      font-size: 1em;
+      line-height: 1.5;
+      color: #141414;
+      background-color: white;
+      background-clip: padding-box;
+      border: 1px solid #141414;
+      appearance: none;
+      border-radius: 0.25rem;
+      outline: none; }
+    footer .newsletter__form-btn {
+      height: 38px;
+      font-family: "Raleway", sans-serif;
+      font-size: 1em;
+      padding: 0.4rem 3.20rem;
+      transition: all 0.3s;
+      cursor: pointer; }
+      footer .newsletter__form-btn:hover {
+        color: #141414;
+        background-color: #ff5100; }
+  footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid; }
+    footer .footer__logo {
+      font-size: 1.5em;
+      font-family: "Alfa Slab One", cursive; }
+    footer .footer__logo-span {
+      font-family: "Raleway", sans-serif; }
+    footer .footer__terminos {
+      display: flex;
+      gap: 12px; }
+      footer .footer__terminos li p {
+        color: #747474;
+        opacity: 0.5; }
+    footer .footer__redes {
+      display: flex;
+      gap: 12px; }
+      footer .footer__redes li a {
+        background-color: #edf2f4;
+        transition: all 0.3s ease-in-out;
+        width: 60px;
+        height: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; }
+        footer .footer__redes li a .fa-facebook-f {
+          color: #3b5998; }
+        footer .footer__redes li a .fa-twitter {
+          color: #1da1f2; }
+        footer .footer__redes li a .fa-instagram {
+          color: #e1306c; }
+        footer .footer__redes li a:hover {
+          transform: scale(1.1); }
 
 /* ESTILOS GENERALES DEL INICIO DE LAs PAGINAS */
 .inicio {
@@ -239,6 +290,10 @@ footer {
     margin: auto;
     padding: 0 4rem;
     cursor: pointer; }
+    .proyectos__container-title {
+      font-size: 4em;
+      font-weight: 300;
+      padding-bottom: 0.5rem; }
   .proyectos__galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -265,7 +320,7 @@ footer {
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.924);
+        background-color: rgba(0, 0, 0, 0.938);
         opacity: 0;
         transition: opacity .7s; }
       .proyectos__galeria article h3, .proyectos__galeria article p {
@@ -276,12 +331,14 @@ footer {
         color: white;
         text-align: center; }
       .proyectos__galeria article .proyecto__titulo {
-        font-size: 2em;
-        text-decoration: underline;
-        font-weight: 700; }
+        font-size: 2.5em;
+        text-decoration-line: underline;
+        text-decoration-color: rgba(237, 242, 244, 0.623);
+        font-weight: 300;
+        margin-bottom: 0.5rem; }
       .proyectos__galeria article .proyecto__descripcion {
         font-size: 1.5em;
-        padding-bottom: 1rem; }
+        padding-bottom: 2rem; }
     .proyectos__galeria .img-1 {
       grid-area: img-1;
       background-image: url(../image/proyectos/img1.webp);
@@ -351,6 +408,7 @@ footer {
       transform: scale(1.1); }
   .equipo__nombre {
     font-size: 2em;
+    font-weight: 400;
     padding: 0.5rem 0; }
   .equipo__funcion {
     color: #747474;
@@ -445,6 +503,11 @@ footer {
       width: 100%; }
   .nosotrosText {
     font-size: calc(1em + 2vw); }
+  /* FOOTER */
+  footer .newsletter__form {
+    row-gap: 12px; }
+  footer .newsletter__form-imput {
+    width: 92%; }
   /* INICIO PAGINAS */
   .inicio {
     grid-template-columns: 1fr;
@@ -514,7 +577,11 @@ footer {
       padding: 0 1rem; }
   /* PROYECTOS */
   .proyectos__galeria {
-    grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12"; } }
+    grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12"; }
+  /* FOOTER*/
+  footer .footer {
+    flex-direction: column-reverse;
+    row-gap: 1.5rem; } }
 
 @media only screen and (min-width: 1024px) {
   /* BARRA DE NAVEGACION */
