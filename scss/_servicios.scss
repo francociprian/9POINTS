@@ -1,13 +1,17 @@
 /* SERVICIOS */
 .servicios {   
-    width: 80%;
+    width: 95vw;
+    height: 85vh;
     margin: auto;
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &__title {
         font-size: 2.5em;
-        font-weight: 600;
+        font-weight: 200;
         text-align: center;
-        padding-bottom: 2.5rem ;
+        padding-top: 1rem;
+        padding-bottom: 3rem ;
     }
     &__boxes {
         display: flex;
@@ -16,11 +20,11 @@
         text-align: center;
         div {
             width: 33%;
-            padding: 10px 55px 85px 55px;
+            padding: 10px 55px 100px 55px;
         }
     }
     &__icons {
-        width: 95px;
+        width: 5.938rem;
         transition: transform .6s;
         &:hover {
             transform: scale(1.1);

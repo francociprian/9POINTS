@@ -12,6 +12,7 @@
       font-size: 2.5em;
       font-weight: 200;
       padding: 1rem 1rem;
+      text-align: center;
     }
     &__container {
         display: flex;
@@ -19,7 +20,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        margin: 3rem 0;
+        margin: 1.7rem 0;
 
         .info {
             
@@ -189,14 +190,5 @@
           }
             
         }
-    }
-
-    
-
-    iframe {
-        filter: grayscale(100%);
-          &:hover {
-            filter: none;
-          }
     }
 }

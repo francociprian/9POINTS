@@ -12,7 +12,7 @@ body {
 .marginSuperior {
     margin-top: 3.75rem;
 }
-.bgColor {
+.inicio--background{
     background-color: $black_primary;
     color: $white_primary;
 }
@@ -26,11 +26,11 @@ a {
 .fraseColor {
     color: $orange_aerospace;
 }
-.containerLayout {
+.menu--layout {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
 .menu__link--active {
-    color: rgb(255, 81, 0);
+    color: $orange_aerospace;
 }

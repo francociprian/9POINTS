@@ -7,8 +7,7 @@
     <!-- SEO -->
     <meta name="keywords" content="Diseño Web, Software, Negocio, SEO, Machine Learning">
     <meta name="description" content="9Points es un agencia de soluciones de software que ofrece experiencias digitales innovadoras acompañado de un diseño elegante.">
-    <meta name="google-site-verification" content="iVk03jtj0oxO2xGN786jIcKW9cDAODxCiK-q-QT9V0s" />
-    <!-- Favicon -->
+    <meta name="google-site-verification" content="iVk03jtj0oxO2xGN786jIcKW9cDAODxCiK-q-QT9V0s"/>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/d5f1493466.js" crossorigin="anonymous"></script>
@@ -23,16 +22,19 @@
         9POINTS - Tecnología y Diseño
     </title>
 </head>
-<body class="bgColor">
+<body class="inicio--background">
 
     <header>
-        <nav class="menu containerLayout">
+        <nav class="menu menu--layout">
             <!-- Logo -->
             <a href="#" class="menu__logo">  
                 9Points&period;
             </a>
             <!-- Links de Navegación -->
             <ul class="menu__lista">
+                <li class="menu__items">
+                    <a href="index.html" class="menu__link  menu__link--active">Inicio</a>
+                </li>
                 <li class="menu__items">
                     <a href="paginas/servicios.html" class="menu__link">Servicios</a>
                 </li>
@@ -58,16 +60,16 @@
             <!-- Imagen / Logo -->
             <div class="main">
                 <p class="main__logo">9POINTS</p>
-                <img src="image/GradientTexto.webp" alt="Imagen Principal" class="main__imagen">
             </div>
             <!-- Quienes somos? -->
-            <p class="nosotrosText">
-                9points desarrolla soluciones de software a medida desde start-up hasta empresas establecidas a nivel mundial. Combinamos un diseño innovador con asesoramiento a nuestros clientes en todas las decisiones digitales y comerciales.
-            </p>
-
-            <div class="nosotros">
-                <a href="paginas/proyectos.html" class="nosotros__proyectos btn-white--dark">Mira nuestros proyectos</a>
-                <a href="paginas/contacto.html" class="nosotros__contacto btn-orange--dark">Empieza tu proyecto</a>
+            <div class="nosotros" >
+                <p class="nosotros__text" id="index_text">
+                    <!-- 9points desarrolla soluciones de software a medida desde start-up hasta empresas establecidas a nivel mundial. Combinamos un diseño innovador con asesoramiento a nuestros clientes en todas las decisiones digitales y comerciales. -->
+                </p>
+                <div class="nosotros__btn">
+                    <a href="paginas/proyectos.html" class="nosotros__btn-proyectos btn-white--dark">Mira nuestros proyectos</a>
+                    <a href="paginas/contacto.html" class="nosotros__btn-contacto btn-orange--dark">Empieza tu proyecto</a>
+                </div>
             </div>
             
         </section>
@@ -93,7 +95,7 @@
         </div>
 
     </footer>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <!--animate & wow-->
     <script src="../js/wow.min.js"></script>
     <script> new WOW().init(); </script>
