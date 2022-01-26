@@ -262,9 +262,8 @@ footer {
 
 /* SERVICIOS */
 .servicios {
-  width: 95vw;
-  height: 85vh;
-  margin: auto;
+  width: 80%;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -280,8 +279,8 @@ footer {
     justify-content: center;
     text-align: center; }
     .servicios__boxes div {
-      width: 33%;
-      padding: 10px 55px 100px 55px; }
+      width: 400px;
+      padding: 0.622rem 1.875rem 6.25rem 1.875rem; }
   .servicios__icons {
     width: 5.938rem;
     transition: transform .6s; }
@@ -631,7 +630,7 @@ footer {
       font-size: calc(2.2em + 12vw);
       padding: 0.5rem; }
     .inicio__descripcion {
-      padding: 1rem 2rem 1rem 2rem;
+      padding: 1rem;
       font-size: 1.4em;
       align-self: flex-start; }
   /* SERVICIOS */
