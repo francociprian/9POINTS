@@ -1,8 +1,7 @@
 /* SERVICIOS */
 .servicios {   
-    width: 95vw;
-    height: 85vh;
-    margin: auto;
+    width: 80%;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,8 +18,8 @@
         justify-content: center;
         text-align: center;
         div {
-            width: 33%;
-            padding: 10px 55px 100px 55px;
+            width: 400px;
+            padding: 0.622rem 1.875rem 6.25rem 1.875rem;
         }
     }
     &__icons {
