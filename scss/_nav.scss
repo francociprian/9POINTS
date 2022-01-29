@@ -11,6 +11,11 @@ header {
 .menu {
     display: flex;
     flex-direction: row;
+    &--layout {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+    }
     &__logo {
         font-size: 2em;
         font-family: $fontLogo;
@@ -40,8 +45,11 @@ header {
         font-weight: 400;
         font-size: 1.2em;
         transition: .4s cubic-bezier(0.15, 0.10, 0.355, 1);
+        &--active {
+            color: $color_primary;
+        }
         &:hover {
-            color: $orange_aerospace;
+            color: $color_primary;
         }
     }
 

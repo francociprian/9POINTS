@@ -38,22 +38,22 @@
     }
 }
 
-.btn-orange {
-    color: $orange_aerospace;
-    border: 1.8px solid $orange_aerospace;
+.btn-rose {
+    color: $color_primary;
+    border: 1.8px solid $color_primary;
     border-radius: 3px;
 
     &--light {
-        @extend .btn-orange;
+        @extend .btn-rose;
         background-color: $white_primary;
     }
     
     &--dark {
-        @extend .btn-orange;
+        @extend .btn-rose;
         background-color: $black_primary;
     }
     &--darkgray{
-        @extend .btn-orange;
+        @extend .btn-rose;
         background-color: $black_secundary;
     }
 }

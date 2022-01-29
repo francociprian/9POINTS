@@ -38,7 +38,6 @@
         font-weight: 900;
         letter-spacing: 5px;
         z-index: 999;
-        
     }
 }
 
@@ -77,7 +76,7 @@
 
             &:hover {
             color: $black_primary;
-            background-color: $orange_aerospace;
+            background-color: $color_primary;
         }
         }
     }

@@ -33,7 +33,7 @@
                 display: flex;
 
                 i {
-                    color: $orange_aerospace;
+                    color: $color_primary;
                     background-color: $alice_blue;
                     /* background-color: rgb(179, 178, 178); */
                     transition: all 0.3s ease-in-out;
@@ -48,7 +48,7 @@
                 &:hover {
                     i {
                         color: $white_primary;
-                        background-color: $orange_aerospace;
+                        background-color: $color_primary;
                     }
                 }
             }
@@ -104,7 +104,7 @@
                 box-shadow: 0 0 0 1px $linkWater inset, 0 0 0 transparent;
                 transition: all 0.1s ease;
                   &:focus{
-                    outline-color: $orange_aerospace;
+                    outline-color: $color_primary;
                   }
               }
               // imput
@@ -125,7 +125,7 @@
                 box-shadow: 0 0 0 1px $linkWater inset, 0 0 0 transparent;
                 &:focus {
                   box-shadow: none ;
-                  border: 2px solid $orange_aerospace;
+                  border: 2px solid $color_primary;
                   outline-width: 0;
                 }
               }
@@ -143,9 +143,9 @@
                 padding: 1px 0 0 1px;
                 color: #536171;
                 transform: translate3d(0, 0, 0) scale(1);
-                background-color: #fff;
+                background-color: $white_primary;
                 transition-property: color, transform;
-                box-shadow: -6px 0 #ffffff, 6px 0 #ffffff;
+                box-shadow: -6px 0 $white_primary, 6px 0 $white_primary;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-duration: 0.25s;
               }
@@ -171,7 +171,7 @@
         
                     &:hover {
                         transform: scale(1.1);
-                        background-color: $orange_aerospace;
+                        background-color: $color_primary;
                         color: $white_primary;
                     }
               }

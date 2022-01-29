@@ -2,6 +2,10 @@
 .inicio {
     display: grid;
     height: 100vh;
+    &--background{
+        background-color: $black_primary;
+        color: $white_primary;
+    }
 
     &__titulo {
         grid-area: tituloPagina;
@@ -14,5 +18,8 @@
         grid-area: descripcionPagina;
         align-self: center;
         justify-self: end;
+        &--span{
+            color: $color_primary;
+        }
     }
 }

@@ -52,7 +52,7 @@ footer {
             cursor: pointer;
             &:hover {
                 color: $black_secundary;
-                background-color: $orange_aerospace;
+                background-color: $color_primary;
             }
         }
     }
@@ -71,10 +71,10 @@ footer {
         }
         &__logo {
             font-size: 1.5em;
-            font-family: $fontLogo;  
-        }
-        &__logo-span {
-            font-family: $fontPrincipal;
+            font-family: $fontLogo;
+            &--span {
+                font-family: $fontPrincipal;
+            }  
         }
         &__terminos {
             display: flex;
