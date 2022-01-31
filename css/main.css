@@ -627,7 +627,6 @@ footer .footer__redes li a:hover .fa-instagram {
 .contacto__container .info__telefono i {
   color: #e93e74;
   background-color: #edf2f4;
-  /* background-color: rgb(179, 178, 178); */
   transition: all 0.3s ease-in-out;
   width: 60px;
   height: 60px;
