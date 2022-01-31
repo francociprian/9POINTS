@@ -9,7 +9,8 @@ Desarrollo de una empresa que brinda soluciones de software, utilizando HTML par
 
 <h3 aling="left"> Link al Proyecto </p>
 
-[https://9points.netlify.app/](https://9points.netlify.app/) 
+<p aling="left"> ⚡ <a href="https://9points.netlify.app/">https://9points.netlify.app/</a> </p>
+<p aling="left"> ⚡ <a href="https://9points.000webhostapp.com/">https://9points.000webhostapp.com/</a> </p> 
 
 <br>
 <br>
