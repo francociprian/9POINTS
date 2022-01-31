@@ -1,13 +1,14 @@
-/*FOOTER*/ 
+/*FOOTER*/
 .footerIndex {
     color: $black_primary;
     background-color: $white_primary;
     padding: 0.8rem 0;
 }
+
 footer {
     background-color: $black_secundary;
-    color:$white_primary;
-    
+    color: $white_primary;
+
     .newsletter {
         display: flex;
         justify-content: center;
@@ -19,18 +20,21 @@ footer {
             font-size: calc(1.275rem + .3vw);
             padding-bottom: 0.5rem;
         }
-        &__descripcion{
+
+        &__descripcion {
             font-size: 1rem;
             padding-bottom: 0.8rem;
         }
-        &__form{
+
+        &__form {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
             padding: 0.5rem 0;
         }
-        &__form-imput{
+
+        &__form-imput {
             width: 60%;
             padding: 0.375rem 0.75rem;
             font-size: 1em;
@@ -43,6 +47,7 @@ footer {
             border-radius: 0.25rem;
             outline: none;
         }
+
         &__form-btn {
             height: 38px;
             font-family: $fontPrincipal;
@@ -50,12 +55,14 @@ footer {
             padding: 0.4rem 3.20rem;
             transition: all 0.3s;
             cursor: pointer;
+
             &:hover {
                 color: $black_secundary;
                 background-color: $color_primary;
             }
         }
     }
+
     .footer {
         display: flex;
         flex-direction: row;
@@ -64,53 +71,64 @@ footer {
         padding: 1rem 0;
         margin-top: 1rem;
         border-top: 1px solid;
+
         &--inicio {
-            border: none; 
-            padding: 0; 
+            border: none;
+            padding: 0;
             margin: 0;
         }
+
         &__logo {
             font-size: 1.5em;
             font-family: $fontLogo;
+
             &--span {
                 font-family: $fontPrincipal;
-            }  
+            }
         }
+
         &__terminos {
             display: flex;
             gap: 12px;
+
             li p {
                 color: $sonic_silver;
                 opacity: 0.5;
             }
+
             &--inicio {
                 li a {
                     color: $black_primary;
                 }
             }
         }
+
         &__redes {
             display: flex;
             gap: 12px;
+
             li a {
                 background-color: $alice_blue;
                 color: $black_secundary;
-                transition: all 0.3s ease-in-out; 
+                transition: all 0.3s ease-in-out;
                 width: 60px;
                 height: 60px;
                 display: inline-flex;
                 align-items: center;
-                justify-content:center;
+                justify-content: center;
                 border-radius: 50%;
-        
+
                 &:hover {
                     transform: scale(1.1);
+
                     .fa-facebook-f {
                         color: rgb(59, 89, 152);
                     }
+
                     .fa-twitter {
                         color: rgb(29, 161, 242);
                     }
+
                     .fa-instagram {
                         color: rgb(225, 48, 108);
                     }

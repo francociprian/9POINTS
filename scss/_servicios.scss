@@ -1,40 +1,47 @@
 /* SERVICIOS */
-.servicios {   
+.servicios {
     width: 80%;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     &__title {
         font-size: 2.5em;
         font-weight: 200;
         text-align: center;
         padding-top: 1rem;
-        padding-bottom: 3rem ;
+        padding-bottom: 3rem;
     }
+
     &__boxes {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+
         div {
             width: 400px;
             padding: 0.622rem 1.875rem 6.25rem 1.875rem;
         }
     }
+
     &__icons {
         width: 5.938rem;
         transition: transform .6s;
+
         &:hover {
             transform: scale(1.1);
         }
     }
+
     &__nombre {
         font-size: 1.5em;
         font-weight: 600;
         text-align: center;
         padding: 0.5rem 0;
     }
+
     &__desc {
         text-align: center;
     }

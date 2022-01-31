@@ -42,9 +42,9 @@
 }
 
 .nosotros {
-    height: 80vh; 
-    @include flex-column (center,center,nowrap);
-    
+    height: 80vh;
+    @include flex-column (center, center, nowrap);
+
     &__text {
         width: 70%;
         font-size: calc(1em + 0.9vw);
@@ -55,29 +55,31 @@
         margin: 2rem auto;
         text-align: center;
     }
+
     &__btn {
 
         margin: 6rem 0;
         text-align: center;
-        @include flex-row (center,center,wrap);
+        @include flex-row (center, center, wrap);
 
-        &-proyectos{
-            @include button (1.2em, 500, 2px, 450px, 0.8rem 3.20rem,1rem);
+        &-proyectos {
+            @include button (1.2em, 500, 2px, 450px, 0.8rem 3.20rem, 1rem);
             transition: all 0.3s;
-    
+
             &:hover {
                 color: $black_primary;
                 background-color: $white_primary;
-            } 
+            }
         }
+
         &-contacto {
             @include button (1.2em, 500, 2px, 450px, 0.8rem 3.20rem, 1rem);
             transition: all 0.3s;
 
             &:hover {
-            color: $black_primary;
-            background-color: $color_primary;
-        }
+                color: $black_primary;
+                background-color: $color_primary;
+            }
         }
     }
 }
