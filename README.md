@@ -1,10 +1,17 @@
-<h1 align="center">Holaa 👋, soy Franco Ciprian</h1><br>
-<h2 align="center">Proyecto Desarrollo Web CODERHOUSE</h2><br>
+<h1 align="center">9POINTS</h1><br>
 
-<h1 align="left">9POINTS</h1>
+## Proyecto Desarrollo Web CODERHOUSE
+
+<p align="center">
+  <a href="https://9points.netlify.app/" target="_blank">
+    <img src="https://i.postimg.cc/Mps8zHPN/9points.webp"  alt="9points Banner" />
+  </a>
+</p>
+
+<br>
 
 <p align="left">
-Desarrollo de una empresa que brinda soluciones de software, utilizando HTML para la estructura, SCSS para el apartado visual y Javascript básico para interacciones con la página. Se hizo uso de la metodologia BEM, y el proyecto se gestionó utilizando GIT para control de versiones. 
+Desarrollo de una empresa ficticia que brinda soluciones de software, utilizando HTML para la estructura, SCSS para el apartado visual y Javascript básico para interacciones con la página. Se hizo uso de la metodologia BEM, y el proyecto se gestionó utilizando GIT para control de versiones. 
 </p><br>
 
 <h3 aling="left"> Link al Proyecto </p>
